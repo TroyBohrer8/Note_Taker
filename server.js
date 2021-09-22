@@ -1,6 +1,8 @@
 const express = require('express');
+const fs = require('fs');
 const path = require('path');
 const { clog } = require('./middleware/clog');
+const db = require('./db/db.json');
 const api = require('./routes/index.js');
 
 const PORT = process.env.port || 3001;
