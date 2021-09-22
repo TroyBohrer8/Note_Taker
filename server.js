@@ -3,6 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const { clog } = require("./middleware/clog");
 const db = require("./db/db.json");
+const uuid = require('./helpers/uuid');
 const api = require("./routes/index.js");
 
 const PORT = process.env.port || 3001;
